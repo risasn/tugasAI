@@ -18,4 +18,11 @@ saudaraKembar(john,  liza).
 saudaraKembar(susan,  ray).
 saudaraKembar(ray,  susan).
 saudaraKembar(peter,  mary).
-saudaraKembar(mary,  peter)
+saudaraKembar(mary,  peter).
+
+is_menikah(X,Y) :-menikah(X, Y).
+is_menikah(X,Y) :-menikah(X, Z), is_menikah(z,y).
+is_anakKandung(X,Y) :-anakKandung(X, Y).
+is_anakKandung(X,Y) :-anakKandung(X, Z), is_anakKandung(z,y).
+is_saudaraKembar(X,Y) :-saudaraKembar(X, Y).
+is_saudaraKembar(X,Y) :-saudaraKembar(X, Z), is_saudaraKembar(z,y).
